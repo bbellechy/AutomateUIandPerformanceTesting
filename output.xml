@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.5 on win32)" generated="2024-11-21T21:22:49.416184" rpa="false" schemaversion="5">
+<suite id="s1" name="Post Test" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test">
+<suite id="s1-s1" name="1 Invalid Login" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test\1_invalid_login.robot">
+<kw name="Open Browser To Login Page" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:22:49.674475" level="INFO">Opening browser 'firefox' to base url 'http://45.136.236.146:8081/'.</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:22:49.674475" elapsed="5.477273"/>
+</kw>
+<kw name="Click Log In Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:22:55.152751" level="INFO">Clicking element 'xpath://button[contains(@class, 'Button--link')]//span[text()='Log In']'.</msg>
+<arg>xpath://button[contains(@class, 'Button--link')]//span[text()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:22:55.152751" elapsed="0.334968"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:22:55.151748" elapsed="0.335971"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:22:55.489718" level="INFO">Page title is 'ITDS362'.</msg>
+<arg>ITDS362</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-21T21:22:55.487719" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:22:55.487719" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:22:49.673477" elapsed="5.816241"/>
+</kw>
+<test id="s1-s1-t1" name="Invalid Username" line="17">
+<kw name="Go To Login Page" owner="resource" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:22:55.490838" level="INFO">Opening url 'http://45.136.236.146:8081/'</msg>
+<arg>${SERVER}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:22:55.490719" elapsed="0.175631"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:22:55.668350" level="INFO">Page title is 'ITDS362'.</msg>
+<arg>ITDS362</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-21T21:22:55.666350" elapsed="0.002000"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:22:55.666350" elapsed="0.002000"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:22:55.489718" elapsed="0.178632"/>
+</kw>
+<kw name="Login With Invalid Credentials Should Fail">
+<kw name="Open Browser To Login Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:22:55.669352" level="INFO">Opening browser 'firefox' to base url 'http://45.136.236.146:8081/'.</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:22:55.669352" elapsed="6.079397"/>
+</kw>
+<kw name="Click Log In Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:01.749747" level="INFO">Clicking element 'xpath://button[contains(@class, 'Button--link')]//span[text()='Log In']'.</msg>
+<arg>xpath://button[contains(@class, 'Button--link')]//span[text()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:01.749747" elapsed="0.320416"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:01.749747" elapsed="0.320416"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:02.072169" level="INFO">Page title is 'ITDS362'.</msg>
+<arg>ITDS362</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.070163" elapsed="0.002006"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:02.070163" elapsed="0.002006"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:22:55.669352" elapsed="6.402817"/>
+</kw>
+<kw name="Input Username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:02.073166" level="INFO">Typing text 'invalid' into text field 'xpath=//input[@name='identification']'.</msg>
+<arg>xpath=//input[@name='identification']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.073166" elapsed="0.050100"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-11-21T21:23:02.072169" elapsed="0.051097"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:02.124263" level="INFO">Typing text '12345678' into text field 'xpath=//input[@name='password']'.</msg>
+<arg>xpath=//input[@name='password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.124263" elapsed="0.021394"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-11-21T21:23:02.124263" elapsed="0.021394"/>
+</kw>
+<kw name="Submit Credentials" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:02.146659" level="INFO">Clicking element 'xpath=//div[@class='Form-group']//button[span[text()='Log In']]'.</msg>
+<arg>xpath=//div[@class='Form-group']//button[span[text()='Log In']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.146659" elapsed="0.259803"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:02.145657" elapsed="0.261804"/>
+</kw>
+<kw name="Login Should Have Failed">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:02.408462" level="INFO">Current location is 'http://45.136.236.146:8081/'.</msg>
+<arg>${SERVER}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.407461" elapsed="0.001001"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:02.409461" level="INFO">Page title is 'ITDS362'.</msg>
+<arg>ITDS362</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.408462" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:02.407461" elapsed="0.003000"/>
+</kw>
+<arg>invalid</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-11-21T21:22:55.669352" elapsed="6.741109"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:22:55.489718" elapsed="6.920743"/>
+</test>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="PASS" start="2024-11-21T21:22:49.443161" elapsed="12.968301"/>
+</suite>
+<suite id="s1-s2" name="2 Valid Login" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test\2_valid_login.robot">
+<test id="s1-s2-t1" name="Valid Login" line="9">
+<kw name="Open Browser To Login Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:02.416028" level="INFO">Opening browser 'firefox' to base url 'http://45.136.236.146:8081/'.</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.416028" elapsed="6.010199"/>
+</kw>
+<kw name="Click Log In Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:08.427223" level="INFO">Clicking element 'xpath://button[contains(@class, 'Button--link')]//span[text()='Log In']'.</msg>
+<arg>xpath://button[contains(@class, 'Button--link')]//span[text()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:08.427223" elapsed="0.339027"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:08.426227" elapsed="0.340023"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:08.770366" level="INFO">Page title is 'ITDS362'.</msg>
+<arg>ITDS362</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-21T21:23:08.766250" elapsed="0.004116"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:08.766250" elapsed="0.004116"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:02.416028" elapsed="6.354338"/>
+</kw>
+<kw name="Input Username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:08.771369" level="INFO">Typing text 'todsob' into text field 'xpath=//input[@name='identification']'.</msg>
+<arg>xpath=//input[@name='identification']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:08.771369" elapsed="0.048477"/>
+</kw>
+<arg>todsob</arg>
+<status status="PASS" start="2024-11-21T21:23:08.771369" elapsed="0.048477"/>
+</kw>
+<kw name="Input Password" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:08.820846" level="INFO">Typing text '12345678' into text field 'xpath=//input[@name='password']'.</msg>
+<arg>xpath=//input[@name='password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:08.819846" elapsed="0.027470"/>
+</kw>
+<arg>12345678</arg>
+<status status="PASS" start="2024-11-21T21:23:08.819846" elapsed="0.027470"/>
+</kw>
+<kw name="Submit Credentials" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:08.848317" level="INFO">Clicking element 'xpath=//div[@class='Form-group']//button[span[text()='Log In']]'.</msg>
+<arg>xpath=//div[@class='Form-group']//button[span[text()='Log In']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:08.848317" elapsed="0.310205"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:08.847316" elapsed="0.312210"/>
+</kw>
+<kw name="Welcome Page Should Be Open" owner="resource">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:09.161522" level="INFO">Current location is 'http://45.136.236.146:8081/'.</msg>
+<arg>${SERVER}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:23:09.159526" elapsed="0.001996"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:09.159526" elapsed="0.001996"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:02.415026" elapsed="6.746496"/>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2024-11-21T21:23:02.411462" elapsed="6.751441"/>
+</suite>
+<suite id="s1-s3" name="3 Post" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test\3_post.robot">
+<test id="s1-s3-t1" name="Strat a Discussion" line="10">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary" type="SETUP">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-21T21:23:09.166903" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser To Discussion Page" owner="resource">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-21T21:23:09.167903" elapsed="1.270275"/>
+</kw>
+<kw name="Click Start a Discussion Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:10.439184" level="INFO">Clicking element 'xpath=//button[contains(@class, 'IndexPage-newDiscussion') and span[text()='Start a Discussion']]'.</msg>
+<arg>xpath=//button[contains(@class, 'IndexPage-newDiscussion') and span[text()='Start a Discussion']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:10.439184" elapsed="2.238780"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:10.438178" elapsed="2.239786"/>
+</kw>
+<kw name="Discussion Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:13.680814" level="INFO">Page title is 'ITDS362'.</msg>
+<arg>ITDS362</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-21T21:23:12.677964" elapsed="1.002967"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:12.677964" elapsed="1.002967"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:09.166903" elapsed="4.514028"/>
+</kw>
+<kw name="Discussion Title" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:13.681147" level="INFO">Typing text 'testrobsong' into text field 'xpath=//input[@class='FormControl' and @placeholder='Discussion Title']'.</msg>
+<arg>xpath=//input[@class='FormControl' and @placeholder='Discussion Title']</arg>
+<arg>${TITLE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:13.681147" elapsed="3.022116"/>
+</kw>
+<arg>testrobsong</arg>
+<status status="PASS" start="2024-11-21T21:23:13.681147" elapsed="3.022116"/>
+</kw>
+<kw name="Discussion WRITE POST" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:16.703693" level="INFO">Typing text 'susuๆ' into text field 'xpath=//textarea[contains(@class, 'TextEditor-editor')]'.</msg>
+<arg>xpath=//textarea[contains(@class, 'TextEditor-editor')]</arg>
+<arg>${WRITE_POST}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:16.703693" elapsed="3.025677"/>
+</kw>
+<arg>susuๆ</arg>
+<status status="PASS" start="2024-11-21T21:23:16.703693" elapsed="3.025677"/>
+</kw>
+<kw name="Submit Post" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:19.730726" level="INFO">Clicking button 'xpath=//button[span[text()='Post Discussion']]'.</msg>
+<arg>xpath=//button[span[text()='Post Discussion']]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:19.730490" elapsed="5.249501"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:19.729370" elapsed="5.250621"/>
+</kw>
+<kw name="Choose Tag" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:24.980494" level="INFO">Clicking element 'xpath=//li[contains(@class, 'active')]//span[text()='General']'.</msg>
+<arg>xpath=//li[contains(@class, 'active')]//span[text()='General']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:24.980494" elapsed="2.230508"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:24.980494" elapsed="2.230508"/>
+</kw>
+<kw name="Submit Tag" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:27.212136" level="INFO">Clicking button 'xpath=//button[.//span[text()='OK']]'.</msg>
+<arg>xpath=//button[.//span[text()='OK']]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:27.211600" elapsed="5.782358"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:27.211600" elapsed="5.782358"/>
+</kw>
+<kw name="Post Can Created" owner="resource">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:33.997324" level="INFO">Current location is 'http://45.136.236.146:8081/d/105-testrobsong'.</msg>
+<arg>${POST SUCCCESSED}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:23:32.994995" elapsed="1.002329"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:32.994995" elapsed="1.002329"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:09.165903" elapsed="24.831421"/>
+</test>
+<doc>A test suite with a single test for create Discussion.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2024-11-21T21:23:09.163904" elapsed="24.834577"/>
+</suite>
+<suite id="s1-s4" name="4 Post Reply" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test\4_post_reply.robot">
+<test id="s1-s4-t1" name="POST Reply" line="10">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary" type="SETUP">
+<arg>2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-21T21:23:34.002307" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser To REPLY Page" owner="resource">
+<kw name="Click Write a Reply" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:34.003313" level="INFO">Clicking button 'xpath=//button[span[text()='Reply']]'.</msg>
+<arg>xpath=//button[span[text()='Reply']]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:34.003313" elapsed="20.101295"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:34.003313" elapsed="20.101295"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:34.002307" elapsed="20.102301"/>
+</kw>
+<kw name="Write a Reply" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:23:54.105116" level="INFO">Typing text 'try to reply' into text field 'xpath=//textarea[contains(@class, 'TextEditor-editor')]'.</msg>
+<arg>xpath=//textarea[contains(@class, 'TextEditor-editor')]</arg>
+<arg>${WRITE_POST}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:23:54.105116" elapsed="8.621845"/>
+</kw>
+<arg>try to reply</arg>
+<status status="PASS" start="2024-11-21T21:23:54.105116" elapsed="8.621845"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:02.726961" level="INFO">Executing JavaScript:
+window.console.clear();
+Without any arguments.</msg>
+<arg>window.console.clear();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-21T21:24:02.726961" elapsed="2.004312"/>
+</kw>
+<kw name="Click Post Reply Button" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:04.732193" level="INFO">Clicking button 'xpath=//button[span[text()='Post Reply']]'.</msg>
+<arg>xpath=//button[span[text()='Post Reply']]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:04.732193" elapsed="12.455612"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:04.731273" elapsed="12.456532"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:23:34.002307" elapsed="43.185498"/>
+</test>
+<doc>A test suite with a single test for reply post.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2024-11-21T21:23:33.999493" elapsed="43.189322"/>
+</suite>
+<suite id="s1-s5" name="5 Edit Reply" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test\5_edit_reply.robot">
+<test id="s1-s5-t1" name="Reply Discussion" line="9">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary" type="SETUP">
+<arg>2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-21T21:24:17.191930" elapsed="0.001001"/>
+</kw>
+<kw name="Open Browser To EDIT REPLY Page" owner="resource">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:17.192931" level="INFO">Opening url 'http://45.136.236.146:8081/d/105-testrobsong'</msg>
+<arg>${POST SUCCCESSED}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:24:17.192931" elapsed="2.174555"/>
+</kw>
+<kw name="Click Ellipsis Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:19.368509" level="INFO">Clicking element 'xpath=//button[contains(@class, 'Dropdown-toggle') and .//i[contains(@class, 'fa-ellipsis-h')]]'.</msg>
+<arg>xpath=//button[contains(@class, 'Dropdown-toggle') and .//i[contains(@class, 'fa-ellipsis-h')]]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:19.367486" elapsed="4.237998"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:19.367486" elapsed="4.237998"/>
+</kw>
+<kw name="Click Edit Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:23.605484" level="INFO">Clicking element 'xpath=//button[contains(@class, 'hasIcon') and .//span[text()='Edit']]'.</msg>
+<arg>xpath=//button[contains(@class, 'hasIcon') and .//span[text()='Edit']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:23.605484" elapsed="4.245903"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:23.605484" elapsed="4.245903"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:17.192931" elapsed="10.658456"/>
+</kw>
+<kw name="Write a Edit Reply" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:27.852414" level="INFO">Typing text 'try to edit' into text field 'xpath=//textarea[contains(@class, 'TextEditor-editor')]'.</msg>
+<arg>xpath=//textarea[contains(@class, 'TextEditor-editor')]</arg>
+<arg>${EDIT REPLY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:27.851387" elapsed="6.036701"/>
+</kw>
+<arg>try to edit</arg>
+<status status="PASS" start="2024-11-21T21:24:27.851387" elapsed="6.036701"/>
+</kw>
+<kw name="Click Edit Post Button" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:33.888622" level="INFO">Clicking button 'xpath=//button[span[text()='Save Changes']]'.</msg>
+<arg>xpath=//button[span[text()='Save Changes']]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:33.888622" elapsed="10.244293"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:33.888622" elapsed="10.244293"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:17.191930" elapsed="26.940985"/>
+</test>
+<doc>A test suite with a single test for edit post.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2024-11-21T21:24:17.189814" elapsed="26.944099"/>
+</suite>
+<suite id="s1-s6" name="6 Delete Post" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test\6_delete_post.robot">
+<test id="s1-s6-t1" name="Delete a Discussion" line="9">
+<kw name="Click Dropdown Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:44.138428" level="INFO">Clicking element 'xpath=//button[@class='Dropdown-toggle Button Button--icon Button--primary']//i[contains(@class, 'fa-caret-down')]'.</msg>
+<arg>xpath=//button[@class='Dropdown-toggle Button Button--icon Button--primary']//i[contains(@class, 'fa-caret-down')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:44.138428" elapsed="4.224903"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:44.137427" elapsed="4.225904"/>
+</kw>
+<kw name="Click Delete Button" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:48.364389" level="INFO">Clicking element 'xpath=//button[span[text()='Delete']]'.</msg>
+<arg>xpath=//button[span[text()='Delete']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:48.364389" elapsed="4.215643"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:48.363331" elapsed="4.216701"/>
+</kw>
+<kw name="Click Username" owner="resource">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:52.581205" level="INFO">Opening url 'http://45.136.236.146:8081/d/105-testrobsong'</msg>
+<arg>${POST SUCCCESSED}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:24:52.581081" elapsed="2.182173"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:54.763788" level="INFO">Clicking element 'xpath=//button[@class='Dropdown-toggle Button Button--user Button--flat']'.</msg>
+<arg>xpath=//button[@class='Dropdown-toggle Button Button--user Button--flat']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:24:54.763254" elapsed="4.218208"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:52.580032" elapsed="6.401430"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:44.137427" elapsed="14.844548"/>
+</test>
+<doc>A test suite with a single test for Delete Discussion.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2024-11-21T21:24:44.135420" elapsed="14.846996"/>
+</suite>
+<suite id="s1-s7" name="7 Logout" source="C:\Users\jirac\OneDrive\Desktop\mahidol_term\year3\QA\robotframwork_project\post_test\7_logout.robot">
+<test id="s1-s7-t1" name="Logout" line="9">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary" type="SETUP">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-21T21:24:58.985433" elapsed="0.000999"/>
+</kw>
+<kw name="Click Username" owner="resource">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:24:58.986432" level="INFO">Opening url 'http://45.136.236.146:8081/d/105-testrobsong'</msg>
+<arg>${POST SUCCCESSED}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-21T21:24:58.986432" elapsed="1.200152"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:25:00.186584" level="INFO">Clicking element 'xpath=//button[@class='Dropdown-toggle Button Button--user Button--flat']'.</msg>
+<arg>xpath=//button[@class='Dropdown-toggle Button Button--user Button--flat']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:25:00.186584" elapsed="2.228733"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:58.986432" elapsed="3.428885"/>
+</kw>
+<kw name="Click Log Out" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:25:02.415810" level="INFO">Clicking element 'xpath=//button[@class='hasIcon']//span[text()='Log Out']'.</msg>
+<arg>xpath=//button[@class='hasIcon']//span[text()='Log Out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-21T21:25:02.415810" elapsed="2.163666"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:25:02.415810" elapsed="2.163666"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-21T21:25:04.579476" elapsed="3.515725"/>
+</kw>
+<status status="PASS" start="2024-11-21T21:24:58.985433" elapsed="9.109768"/>
+</test>
+<doc>A test suite with a single test for Logout.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" start="2024-11-21T21:24:58.983448" elapsed="9.112755"/>
+</suite>
+<status status="PASS" start="2024-11-21T21:22:49.417184" elapsed="138.679019"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Post Test">Post Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="1 Invalid Login">Post Test.1 Invalid Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="2 Valid Login">Post Test.2 Valid Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="3 Post">Post Test.3 Post</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="4 Post Reply">Post Test.4 Post Reply</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="5 Edit Reply">Post Test.5 Edit Reply</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="6 Delete Post">Post Test.6 Delete Post</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s7" name="7 Logout">Post Test.7 Logout</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
